@@ -1,0 +1,15 @@
+MEMORY_DATA-01.00.txt
+
+Working memory:
+- W0.00 - AT_LIMIT - This tells the program if the carriage is at a floor limit
+- W0.01 - FRIST_TIME - This signifies this is the initcial triggering of the floor limit switch
+- W0.02 - TIMER_FINISHED - This signifies that the door timer is done and the doors can operate normally
+- W0.03 - STOPPED - This signifies that the elevator has stopped
+- W9.XX - FAKE_ELE - This contains all the fake elevator stuff
+
+Timers:
+- T0000 - DOOR_OPEN_TIMER - This times the amout that the door should stay open for
+
+Variables:
+- NUMBER - HOLD_VALUE - This is the hold value for a spesific elevator
+
