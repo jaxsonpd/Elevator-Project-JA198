@@ -1,0 +1,29 @@
+MEMORY_DATA-01.02.txt
+
+Working memory:
+- W0.00 - AT_LIMIT - This tells the program if the carriage is at a floor limit
+- W0.01 - FIRST_TIME - This signifies this is the initcial triggering of the floor limit switch
+- W0.02 - TIMER_FINISHED - This signifies that the door timer is done and the doors can operate normally
+- W0.03 - STOPPED - This signifies that the elevator has stopped
+- W0.04 - CALIBRATION_MODE - The elevator is being calibrated
+- W2 - POSTION - PRV Value
+- W4 LOW_LIMIT_2 - lower limit two
+- W6 HIGH_LIMIT_2 - upper limit two
+- W8 LOW_LIMIT_3 - lower limit three
+- W10 HIGH_LIMIT_3 - upper limit three
+- W12 LOW_LIMIT_4 - lower limit four
+- W14 HIGH_LIMIT_4 - upper limit four
+- W16 LOW_LIMIT_5 - lower limit five
+- W18 HIGH_LIMIT_5 - upper limit five
+- W20 HIGH_LIMIT_1 - upper limit one
+
+
+- W9.XX - FAKE_ELE - This contains all the fake elevator stuff
+
+
+External Timers:
+
+
+Variables:
+- NUMBER - HOLD_VALUE - This is the hold value for a spesific elevator
+
