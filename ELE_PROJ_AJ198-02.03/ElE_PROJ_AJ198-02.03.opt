@@ -180,8 +180,7 @@ BEGIN
  Item[1]:=2;
  Item[2]:=57;
  Item[3]:=58;
- Item[4]:=66;
- ItemCount:=5;
+ ItemCount:=4;
  Sumcheck:=137;
  Selected:=64;
 END;
@@ -189,7 +188,7 @@ Frame[0]:=
 BEGIN
  Norm:="0078 0078 1484 0495";
  Min:="-001 -001";
- Path:="C:\Users\jackp\OneDrive\Documents\ENMT211\Elevator\ELE_PROJ_AJ198-02.03\ElE_PROJ_AJ198-02.03.cxp";
+ Path:="C:\Users\jackp\OneDrive\Documents\GitHub\Elevator-Project-JA198\ELE_PROJ_AJ198-02.03\ElE_PROJ_AJ198-02.03.cxp";
  Access:="PROJECT:!NewProject.Resources.NewResource1.Symbols";
  Type:=3;
  Views:=
