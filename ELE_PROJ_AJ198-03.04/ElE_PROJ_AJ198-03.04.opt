@@ -1,0 +1,908 @@
+CXProgVer:="1.6";
+DockManager:=
+BEGIN
+ Bar[0]:=
+ BEGIN
+  BarID:=59422;
+  Bars:=6;
+  Bar[0]:=0;
+  Bar[1]:=59415;
+  Bar[2]:=59416;
+  Bar[3]:=59412;
+  Bar[4]:=59414;
+  Bar[5]:=0;
+  Style:=0;
+  ExStyle:=0;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="0";
+  MRUFloat:="0 0";
+  MRUHorzDock:="0 0";
+  MRUVertDock:="0 0";
+  MRUDockingState:=0;
+  DockingStyle:=0;
+  TypeID:=0;
+  ClassName:="";
+  WindowName:="";
+  ResourceID:=0;
+ END;
+ Bar[1]:=
+ BEGIN
+  BarID:=59420;
+  Bars:=3;
+  Bar[0]:=0;
+  Bar[1]:=59413;
+  Bar[2]:=0;
+  Style:=0;
+  ExStyle:=0;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="0";
+  MRUFloat:="0 0";
+  MRUHorzDock:="0 0";
+  MRUVertDock:="0 0";
+  MRUDockingState:=0;
+  DockingStyle:=0;
+  TypeID:=0;
+  ClassName:="";
+  WindowName:="";
+  ResourceID:=0;
+ END;
+ Bar[2]:=
+ BEGIN
+  BarID:=59414;
+  Pos:="483 5";
+  Docking:=1;
+  MRUDockID:=0;
+  MRUDockPos:="483 5 958 251";
+  MRUFloatStyle:=4;
+  MRUFloatPos:="-2147483648 0";
+  Style:=36756;
+  ExStyle:=3889;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="500000";
+  MRUFloat:="300 180";
+  MRUHorzDock:="475 246";
+  MRUVertDock:="300 180";
+  MRUDockingState:=0;
+  DockingStyle:=61440;
+  TypeID:=0;
+  ClassName:="COutputWindow";
+  WindowName:="Output";
+  ResourceID:=0;
+ END;
+ Bar[3]:=
+ BEGIN
+  BarID:=59412;
+  Pos:="1 5";
+  Docking:=1;
+  MRUDockID:=0;
+  MRUDockPos:="1 5 477 251";
+  MRUFloatStyle:=4;
+  MRUFloatPos:="-2147483648 0";
+  Style:=36756;
+  ExStyle:=3889;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="500000";
+  MRUFloat:="300 180";
+  MRUHorzDock:="476 246";
+  MRUVertDock:="300 180";
+  MRUDockingState:=0;
+  DockingStyle:=61440;
+  TypeID:=0;
+  ClassName:="CWatchWindowContainer";
+  WindowName:="Watch Window";
+  ResourceID:=0;
+ END;
+ Bar[4]:=
+ BEGIN
+  BarID:=59416;
+  Visible:=0;
+  Pos:="1 5";
+  Docking:=1;
+  MRUDockID:=0;
+  MRUDockPos:="1 5 710 185";
+  MRUFloatStyle:=4;
+  MRUFloatPos:="-2147483648 0";
+  Style:=36756;
+  ExStyle:=3889;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="500000";
+  MRUFloat:="300 180";
+  MRUHorzDock:="709 246";
+  MRUVertDock:="300 180";
+  MRUDockingState:=0;
+  DockingStyle:=61440;
+  TypeID:=0;
+  ClassName:="CPIVWindowContainer";
+  WindowName:="FB/Structure Instance Viewer";
+  ResourceID:=0;
+ END;
+ Bar[5]:=
+ BEGIN
+  BarID:=59413;
+  Pos:="0 -2";
+  Docking:=1;
+  MRUDockID:=0;
+  MRUDockPos:="0 -2 300 596";
+  MRUFloatStyle:=4;
+  MRUFloatPos:="-2147483648 0";
+  Style:=8084;
+  ExStyle:=3889;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="1000000";
+  MRUFloat:="300 180";
+  MRUHorzDock:="300 180";
+  MRUVertDock:="300 598";
+  MRUDockingState:=0;
+  DockingStyle:=61440;
+  TypeID:=0;
+  ClassName:="CWorkspace";
+  WindowName:="Project Workspace";
+  ResourceID:=0;
+ END;
+ Bar[6]:=
+ BEGIN
+  BarID:=59415;
+  Visible:=0;
+  Pos:="0 0";
+  Docking:=1;
+  MRUDockID:=0;
+  MRUDockPos:="0 0 0 0";
+  MRUFloatStyle:=4;
+  MRUFloatPos:="-2147483648 0";
+  Style:=36756;
+  ExStyle:=3889;
+  PrevFloating:=0;
+  MDIChild:=0;
+  PctWidth:="1000000";
+  MRUFloat:="300 180";
+  MRUHorzDock:="300 246";
+  MRUVertDock:="300 180";
+  MRUDockingState:=0;
+  DockingStyle:=61440;
+  TypeID:=0;
+  ClassName:="CCrossReferenceWindow";
+  WindowName:="Address Reference Tool";
+  ResourceID:=0;
+ END;
+ Bars:=7;
+ Screen:="1920 1080";
+END;
+ProjectTree:=
+BEGIN
+ Item[0]:=0;
+ Item[1]:=2;
+ Item[2]:=87;
+ Item[3]:=88;
+ Item[4]:=101;
+ ItemCount:=5;
+ Sumcheck:=182;
+ Selected:=96;
+END;
+Frame[0]:=
+BEGIN
+ Norm:="0156 0156 0600 0610";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT.Sections.FAKE_ELEVATOR!FAKE_ELEVATOR";
+ Type:=1;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Yscroll:=20;
+  END;
+  nViews:=1;
+ END;
+END;
+Frame[1]:=
+BEGIN
+ Norm:="0182 0182 0626 0636";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT.Sections.Checks!Checks";
+ Type:=1;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+  END;
+  nViews:=1;
+ END;
+END;
+Frame[2]:=
+BEGIN
+ Norm:="0130 0130 0574 0584";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT.Sections.Startup!Startup";
+ Type:=1;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Yscroll:=11;
+  END;
+  nViews:=1;
+ END;
+END;
+Frame[3]:=
+BEGIN
+ Norm:="0052 0052 1380 0624";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Function Blocks.Scheduler!Scheduler";
+ Type:=9;
+ Ysplit:=177;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Mag:=1;
+  END;
+  View[1]:=
+  BEGIN
+   Mag:=1;
+  END;
+  nViews:=2;
+ END;
+END;
+Frame[4]:=
+BEGIN
+ Norm:="0104 0104 0548 0558";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT.Sections.Automation!Automation";
+ Type:=1;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Yscroll:=47;
+  END;
+  nViews:=1;
+ END;
+END;
+Frame[5]:=
+BEGIN
+ Norm:="0078 0078 1406 0650";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT!ELEVATOR_PROJECT.Symbols";
+ Type:=3;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Mag:=1;
+   Extra:=
+   BEGIN
+    Type:="CSymbolTableListCtrlState";
+    Style:=1;
+    NumCols:=7;
+    Width[0]:=150;
+    Width[1]:=90;
+    Width[2]:=100;
+    Width[3]:=1;
+    Width[4]:=84;
+    Width[5]:=48;
+    Width[6]:=200;
+    SortCol:=2;
+   END;
+  END;
+  nViews:=1;
+ END;
+END;
+Frame[6]:=
+BEGIN
+ Norm:="0026 0026 1354 0598";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Function Blocks.FSM!FSM";
+ Type:=9;
+ Ysplit:=177;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Mag:=1;
+  END;
+  View[1]:=
+  BEGIN
+   Mag:=1;
+  END;
+  nViews:=2;
+ END;
+END;
+Frame[7]:=
+BEGIN
+ Max:=true;
+ Norm:="0000 0000 1350 0594";
+ Min:="-001 -001";
+ Access:="PROGRAM:NewProject.Resources.NewResource1.Programs.ELEVATOR_PROJECT.Sections.Scheduler_Land!Scheduler_Land";
+ Type:=1;
+ Views:=
+ BEGIN
+  View[0]:=
+  BEGIN
+   Yscroll:=24;
+  END;
+  nViews:=1;
+ END;
+END;
+nFrames:=8;
+WatchWindow:=
+BEGIN
+ NumWatch:=3;
+ Watches[0]:=
+ BEGIN
+  SheetName:="sheet1";
+  ColumnWidth[0]:=60;
+  ColumnWidth[1]:=196;
+  ColumnWidth[2]:=60;
+  ColumnWidth[3]:=124;
+  ColumnWidth[4]:=60;
+  ColumnWidth[5]:=60;
+  NumWatches:=47;
+  Watch[0]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B1_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[1]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B2_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[2]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B2_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[3]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B3_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[4]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B3_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[5]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B4_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[6]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B4_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[7]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B5_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[8]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.UP_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[9]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.DOWN_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[10]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B1";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[11]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B2";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[12]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B3";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[13]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B4";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[14]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.B5";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[15]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_1";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[16]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_2";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[17]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_3";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[18]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_4";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[19]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_5";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[20]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_5_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[21]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_4_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[22]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_4_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[23]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_3_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[24]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_3_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[25]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_2_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[26]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_2_DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[27]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.BUTTON_1_UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[28]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.WINCH_MOTOR";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=7;
+  END;
+  Watch[29]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.HOLD_VALUE";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=7;
+  END;
+  Watch[30]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.POSTION";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=8;
+  END;
+  Watch[31]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.STOPPED";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[32]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.LIMIT_1";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[33]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.LIMIT_2";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[34]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.LIMIT_3";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[35]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.LIMIT_4";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[36]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.LIMIT_5";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[37]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.F1_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[38]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.F2_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[39]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.F3_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[40]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.F4_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[41]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.F5_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[42]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[43]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[44]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="FSM1.IDLE";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.FSM1.Symbols";
+   Type:=0;
+  END;
+  Watch[45]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols";
+   Type:=0;
+  END;
+  Watch[46]:=
+  BEGIN
+  END;
+ END;
+ Watches[1]:=
+ BEGIN
+  SheetName:="sheet2";
+  ColumnWidth[0]:=60;
+  ColumnWidth[1]:=182;
+  ColumnWidth[2]:=60;
+  ColumnWidth[3]:=136;
+  ColumnWidth[4]:=60;
+  ColumnWidth[5]:=60;
+  NumWatches:=21;
+  Watch[0]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.CURRENT_FLOOR";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=7;
+  END;
+  Watch[1]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.UP";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[2]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.DOWN";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[3]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.IDLE";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[4]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.F5_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[5]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.F4_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[6]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.F3_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[7]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.F2_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[8]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.F1_CALL";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[9]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.LIMIT_1";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[10]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.LIMIT_2";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[11]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.LIMIT_3";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[12]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.LIMIT_4";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[13]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.LIMIT_5";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[14]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STOPPED";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[15]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STO_1";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[16]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STO_2";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[17]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STO_3";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[18]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STO_4";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[19]:=
+  BEGIN
+   PLC:="NewPLC1";
+   Reference:="Scheduler1.STO_5";
+   TypeKnown:=true;
+   Path:="PROJECT:!NewProject.Resources.NewResource1.Symbols.POUInstances.Scheduler1.Symbols";
+   Type:=0;
+  END;
+  Watch[20]:=
+  BEGIN
+  END;
+ END;
+ Watches[2]:=
+ BEGIN
+  SheetName:="sheet3";
+  ColumnWidth[0]:=60;
+  ColumnWidth[1]:=60;
+  ColumnWidth[2]:=60;
+  ColumnWidth[3]:=60;
+  ColumnWidth[4]:=60;
+  ColumnWidth[5]:=60;
+  NumWatches:=1;
+  Watch[0]:=
+  BEGIN
+  END;
+ END;
+END;
+PrintPageSettings:=
+BEGIN
+END;
