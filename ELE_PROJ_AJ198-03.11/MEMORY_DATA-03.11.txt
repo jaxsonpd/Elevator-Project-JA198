@@ -1,0 +1,60 @@
+MEMORY_DATA-03.11.txt
+
+Working memory:
+- W0.00 - AT_LIMIT - This tells the program if the carriage is at a floor limit
+- W0.01 - FIRST_TIME - This signifies this is the initcial triggering of the floor limit switch
+- W0.02 - TIMER_FINISHED - This signifies that the door timer is done and the doors can operate normally
+- W0.03 - STOPPED - This signifies that the elevator has stopped
+- W0.04 - CALIBRATION_FINISHED - The elevator is finished being calibrated
+- W0.05 - CALIBRATION_MODE - System is in calibration mode
+- W0.10 - TO_5
+- W0.09 - TO_4
+- W0.08 - TO_3
+- W0.07 - TO_2
+- W0.06 - TO_1 
+- W0.11 - FLOOR_CALL
+- W0.12 - DOOR_TIM
+- W0.13 - CALL_BOOL
+- W0.14 - DOORS
+- W2 - POSTION - PRV Value
+- W4 - LOW_LIMIT_2 - lower limit two
+- W6 - HIGH_LIMIT_2 - upper limit two
+- W38 - LOW_LIMIT_3 - lower limit three
+- W36 - HIGH_LIMIT_3 - upper limit three
+- W12 - LOW_LIMIT_4 - lower limit four
+- W14 - HIGH_LIMIT_4 - upper limit four
+- W16 - LOW_LIMIT_5 - lower limit five
+- W18 - HIGH_LIMIT_5 - upper limit five
+- W20 - HIGH_LIMIT_1 - upper limit one
+- W22 - ZERO
+- W24 - FLOOR_1 
+- W26 - FLOOR_2
+- W28 - FLOOR_3
+- W30 - FLOOR_4
+- W32 - FLOOR_5
+- W34 - ERROR
+- W40 - DESIRED_FLOOR
+- W42 - TERROR - Transformed Error 
+- W44 - SPEED
+- W46.00 - UP
+- W46.01 - DOWN
+- W46.02 - IDLE
+- W46.03 - F1_CALL
+- W46.04 - F2_CALL
+- W46.05 - F3_CALL
+- W46.06 - F4_CALL
+- W46.07 - F5_CALL
+- W47.xx - SCHEDULAR BITS
+- W48.xx - F CALLS
+ 
+
+
+- W9.XX - FAKE_ELE - This contains all the fake elevator stuff
+
+
+External Timers:
+T0000 - Calibration timer
+T0001 - So we cant make a floor request before doors have let people off
+
+Variables:
+- NUMBER - HOLD_VALUE - This is the hold value for a spesific elevator
