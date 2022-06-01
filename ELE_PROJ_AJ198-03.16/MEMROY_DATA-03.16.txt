@@ -1,0 +1,71 @@
+MEMORY_DATA-03.16
+
+Working memory usage:
+--------- BITS -----------
+- W0.00 = AT_LIMIT - True if at any floor
+- W0.01 = STOPPED - True once elevator stopped for 3 seconds
+- W0.02 = CALIBRATION_FINISHED - True when the calibration is finished
+- W0.03 = CALIBRATION_MODE - True when in calibration
+- W0.04 = FLOOR_CALL - True when there is a floor call
+- W0.05 = CALL_BOOL - Is there a floor call
+- W0.06 = DOORS - Have the doors closed
+- W0.07 = GO_IDLE - Force the FSM idle
+- W1.00 = CALI_1 - Move down to level 1 step
+- W1.01 = CALI_2 - Move up to 5 step
+- W1.02 = CALI_3 - Calculate floors
+- W1.03 = MAIN_1 - Unlock the main program
+- W2.00 = UP - UP state
+- W2.01 = DOWN - DOWN state
+- W2.02 = IDLE - IDLE state
+- W2.03 = F1_CALL
+- W2.04 = F2_CALL
+- W2.05 = F3_CALL
+- W2.06 = F4_CALL
+- W2.07 = F5_CALL
+- W3.00 = STO_1
+- W3.01 = STO_2
+- W3.02 = STO_3
+- W3.03 = STO_4
+- W3.04 = STO_5
+- W3.05 = F1_UP
+- W3.06 = F2_DOWN
+- W3.07 = F2_UP
+- W4.00 = F3_DOWN
+- W4.01 = F3_UP
+- W4.02 = F4_DOWN
+- W4.03 = F4_UP
+- W4.04 = F5_DOWN
+- W4.05 = F1
+- W4.06 = F2
+- W4.07 = F3
+- W5.00 = F4
+- W5.01 = F5
+- W5.02 = CALL
+
+- W9.XX - Fake elevevator stuff
+
+--------- DWORDs ---------
+- W10 = FLOOR_1 - This saves the PRV value of middle of the floor_1 limit switch
+- W12 = FLOOR_2 - This saves the PRV value of middle of the floor_2 limit switch
+- W14 = FLOOR_3 - This saves the PRV value of middle of the floor_3 limit switch
+- W16 = FLOOR_4 - This saves the PRV value of middle of the floor_4 limit switch
+- W18 = FLOOR_5 - This saves the PRV value of middle of the floor_5 limit switch
+- W20 = HIGH_LIMIT_1 - This is the PRV value of the down differectical on limit 1 
+- W22 = LOW_LIMIT_2 - This is the PRV value of the up differenctial on limit 2
+- W24 = HIGH_LIMIT_2 - This is the PRV value of the down differectical on limit 2 
+- W26 = LOW_LIMIT_3 - This is the PRV value of the up differenctial on limit 3
+- W28 = HIGH_LIMIT_3 - This is the PRV value of the down differectical on limit 3 
+- W30 = LOW_LIMIT_4 - This is the PRV value of the up differenctial on limit 4
+- W32 = HIGH_LIMIT_4 - This is the PRV value of the down differectical on limit 4 
+- W34 = LOW_LIMIT_5 - This is the PRV value of the up differenctial on limit 2
+- W36 = HIGH_LIMIT_5 - This is the PRV value of the down differectical on limit 5
+- W38 = DESIRED_FLOOR - This is the floor the elevator is currently traveling to
+- W40 = ERROR - This is the error from the current postion to the desired floor
+- W42 = LAST_CALL - this is the last called floor for checking direction of travel
+- W44 = NEXT_CALL - this is the next called floor for checking direction of travel
+- W46 = POSTION - this is the postion of the elevator
+- W48 = RESULT - ????
+- W50 = TERROR - This is the transformed error ready to be sent to the winch motor
+- W52 = ZERO - This is the value used to reset the PRV counter
+- W54 = SPEED - This is the actual speed sent to the winch motor
+- W63 = POG - ????
